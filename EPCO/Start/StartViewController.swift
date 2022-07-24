@@ -8,10 +8,16 @@
 import UIKit
 
 class StartViewController: UIViewController {
-
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupAttributes()
         
+    }
+    func setupAttributes(){
+        loginButton.layer.borderWidth = 2
+        loginButton.layer.borderColor = UIColor(red: 0.565, green: 0.297, blue: 0.692, alpha: 1).cgColor
     }
     @IBAction func loginButtonDidTap(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -20,6 +26,12 @@ class StartViewController: UIViewController {
             presentationController.detents = [.medium()]
         }
         self.present(startLoginViewController, animated: true)
+    }
+    @IBAction func signUpButtonDidTap(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let startSignUpViewController = storyboard.instantiateViewController(withIdentifier: "startSignUpVC") as! StartSignUPViewController
+        self.present(startSignUpViewController, animated: true)
+        
     }
     
 

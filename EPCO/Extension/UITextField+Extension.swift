@@ -17,6 +17,7 @@ extension UITextField {
     
     func addleftimage(image:UIImage) {
         let leftimage = UIImageView(frame: CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height))
+        leftimage.tintColor = .black
         leftimage.image = image
         self.leftView = leftimage
         self.leftViewMode = .always

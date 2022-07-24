@@ -16,6 +16,7 @@
 		DE34DF7C2881DC790036732D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34DF7B2881DC790036732D /* UIView+Extension.swift */; };
 		DE34DF7F288324980036732D /* StartLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34DF7E288324980036732D /* StartLoginViewController.swift */; };
 		DE34DF85288325770036732D /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34DF84288325770036732D /* UITextField+Extension.swift */; };
+		DE34DF87288C39230036732D /* StartSignUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34DF86288C39220036732D /* StartSignUPViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DE34DF7B2881DC790036732D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		DE34DF7E288324980036732D /* StartLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartLoginViewController.swift; sourceTree = "<group>"; };
 		DE34DF84288325770036732D /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		DE34DF86288C39220036732D /* StartSignUPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSignUPViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +64,9 @@
 		DE34DF662881D00D0036732D /* EPCO */ = {
 			isa = PBXGroup;
 			children = (
+				DE34DF88288C8D220036732D /* Start */,
 				DE34DF672881D00D0036732D /* AppDelegate.swift */,
 				DE34DF692881D00D0036732D /* SceneDelegate.swift */,
-				DE34DF6B2881D00D0036732D /* StartViewController.swift */,
-				DE34DF7E288324980036732D /* StartLoginViewController.swift */,
 				DE34DF6D2881D00D0036732D /* Main.storyboard */,
 				DE34DF702881D00F0036732D /* Assets.xcassets */,
 				DE34DF722881D00F0036732D /* LaunchScreen.storyboard */,
@@ -82,6 +83,16 @@
 				DE34DF84288325770036732D /* UITextField+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		DE34DF88288C8D220036732D /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				DE34DF6B2881D00D0036732D /* StartViewController.swift */,
+				DE34DF7E288324980036732D /* StartLoginViewController.swift */,
+				DE34DF86288C39220036732D /* StartSignUPViewController.swift */,
+			);
+			path = Start;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 				DE34DF7F288324980036732D /* StartLoginViewController.swift in Sources */,
 				DE34DF682881D00D0036732D /* AppDelegate.swift in Sources */,
 				DE34DF85288325770036732D /* UITextField+Extension.swift in Sources */,
+				DE34DF87288C39230036732D /* StartSignUPViewController.swift in Sources */,
 				DE34DF7C2881DC790036732D /* UIView+Extension.swift in Sources */,
 				DE34DF6A2881D00D0036732D /* SceneDelegate.swift in Sources */,
 			);
