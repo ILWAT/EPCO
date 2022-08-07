@@ -8,13 +8,22 @@
 import UIKit
 
 class StartSignUPViewController: UIViewController {
-
+    @IBOutlet weak var checkNameDupli: UIButton!
+    @IBOutlet weak var checkIDDupli: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupAttributes()
 
         // Do any additional setup after loading the view.
     }
     
+    func setupAttributes(){
+        checkNameDupli.layer.borderWidth = 1
+        checkNameDupli.layer.borderColor = UIColor(red: 0.38, green: 0, blue: 1, alpha: 1).cgColor
+        checkIDDupli.layer.borderWidth = 1
+        checkIDDupli.layer.borderColor = UIColor(red: 0.38, green: 0, blue: 1, alpha: 1).cgColor
+    }
 
     /*
     // MARK: - Navigation

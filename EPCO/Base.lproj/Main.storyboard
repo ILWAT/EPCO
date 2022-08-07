@@ -40,7 +40,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ie4-uq-MMG">
                                 <rect key="frame" x="43.5" y="645" width="327" height="58"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10182119205298014" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="327" id="OF2-MC-vct"/>
                                     <constraint firstAttribute="height" constant="58" id="Tyy-BA-HQ5"/>
@@ -48,7 +48,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그인">
                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="0.90304221854304634" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -92,7 +92,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="tintColor"/>
+                        <color key="backgroundColor" red="0.3803921569" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ie4-uq-MMG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4Bs-9g-FNe"/>
                             <constraint firstItem="gAb-IN-imd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4xi-qf-C4V"/>
@@ -112,6 +112,7 @@
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="ie4-uq-MMG" id="dM6-oL-yEf"/>
+                        <outlet property="startView" destination="8bC-Xf-vdC" id="30d-U6-tu1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -144,7 +145,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fg-6m-90e">
                                 <rect key="frame" x="24" y="294" width="366" height="58"/>
-                                <color key="backgroundColor" red="0.56470588235294117" green="0.29803921568627451" blue="0.69019607843137254" alpha="0.69803921568627447" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.38039215686274508" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="mPu-f8-8SW"/>
                                 </constraints>
@@ -225,12 +226,12 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pw9-li-FpF">
                                 <rect key="frame" x="302" y="177" width="88" height="30"/>
-                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.69803921568627447" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="0.69803921568627447" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4vj-ex-AEl"/>
                                     <constraint firstAttribute="width" constant="88" id="Jxg-Ns-uer"/>
                                 </constraints>
-                                <color key="tintColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="0.69803921568627447" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.38039215686274508" green="0.0" blue="1" alpha="0.69803921568627447" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="중복확인">
                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
@@ -258,12 +259,12 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErI-VS-eHb">
                                 <rect key="frame" x="299" y="310" width="88" height="30"/>
-                                <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="0.69803921570000005" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="0.69803921568627447" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="cnd-KN-FtS"/>
                                     <constraint firstAttribute="width" constant="88" id="i5N-SU-aa3"/>
                                 </constraints>
-                                <color key="tintColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="0.69803921570000005" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.38039215686274508" green="0.0" blue="1" alpha="0.69803921570000005" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="중복확인">
                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
@@ -276,7 +277,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l47-gl-h3Y">
                                 <rect key="frame" x="25" y="799" width="364" height="57"/>
-                                <color key="backgroundColor" red="0.56470588235294117" green="0.29803921568627451" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.38039215686274508" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="aZC-oc-l0q"/>
                                 </constraints>
@@ -355,6 +356,10 @@
                             <constraint firstItem="pw9-li-FpF" firstAttribute="trailing" secondItem="4t3-IQ-idG" secondAttribute="trailing" id="tHp-jT-RCp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="checkIDDupli" destination="ErI-VS-eHb" id="eTr-yA-j9J"/>
+                        <outlet property="checkNameDupli" destination="pw9-li-FpF" id="NE6-vk-Lz4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFA-Il-wRU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -367,9 +372,6 @@
         <image name="square" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
