@@ -16,20 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1825" translatesAutoresizingMaskIntoConstraints="NO" id="2ve-g0-DS0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_plat=2" translatesAutoresizingMaskIntoConstraints="NO" id="Dag-OP-CMl">
                                 <rect key="frame" x="147" y="393" width="120" height="120"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="9tH-w5-uYz"/>
-                                    <constraint firstAttribute="height" constant="120" id="UFO-NP-WfK"/>
+                                    <constraint firstAttribute="width" constant="120" id="2Pm-Ji-6U1"/>
+                                    <constraint firstAttribute="height" constant="120" id="nJa-gM-Dou"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2ve-g0-DS0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="BLN-6t-Yxq"/>
-                            <constraint firstItem="2ve-g0-DS0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ubf-7N-AkH"/>
+                            <constraint firstItem="Dag-OP-CMl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Z1R-sd-vuN"/>
+                            <constraint firstItem="Dag-OP-CMl" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xyj-Df-wmw"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,7 +38,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="IMG_1825" width="502" height="502"/>
+        <image name="logo_plat=2" width="80" height="98"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

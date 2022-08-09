@@ -20,8 +20,8 @@ class StartViewController: UIViewController {
         startView.setGradient(color1: UIColor(red: 0.627, green: 0.4, blue: 1, alpha: 1), color2: UIColor(red: 0.38, green: 0, blue: 1, alpha: 1), view: startView)
         loginButton.layer.borderWidth = 2
         loginButton.layer.borderColor = UIColor(red: 0.628, green: 0.4, blue: 1, alpha: 1).cgColor
-        
     }
+    
     @IBAction func loginButtonDidTap(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let startLoginViewController = storyboard.instantiateViewController(withIdentifier: "StartLoginVC") as! StartLoginViewController
@@ -30,6 +30,7 @@ class StartViewController: UIViewController {
         }
         self.present(startLoginViewController, animated: true)
     }
+    
     @IBAction func signUpButtonDidTap(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let startSignUpViewController = storyboard.instantiateViewController(withIdentifier: "startSignUpVC") as! StartSignUPViewController

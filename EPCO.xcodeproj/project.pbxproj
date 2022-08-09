@@ -17,6 +17,7 @@
 		DE34DF7F288324980036732D /* StartLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34DF7E288324980036732D /* StartLoginViewController.swift */; };
 		DE34DF85288325770036732D /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34DF84288325770036732D /* UITextField+Extension.swift */; };
 		DE34DF87288C39230036732D /* StartSignUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34DF86288C39220036732D /* StartSignUPViewController.swift */; };
+		DE89880728A26ADB00818CF7 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89880628A26ADB00818CF7 /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		DE34DF7E288324980036732D /* StartLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartLoginViewController.swift; sourceTree = "<group>"; };
 		DE34DF84288325770036732D /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		DE34DF86288C39220036732D /* StartSignUPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSignUPViewController.swift; sourceTree = "<group>"; };
+		DE89880628A26ADB00818CF7 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +66,13 @@
 		DE34DF662881D00D0036732D /* EPCO */ = {
 			isa = PBXGroup;
 			children = (
-				DE34DF88288C8D220036732D /* Start */,
-				DE34DF672881D00D0036732D /* AppDelegate.swift */,
-				DE34DF692881D00D0036732D /* SceneDelegate.swift */,
-				DE34DF6D2881D00D0036732D /* Main.storyboard */,
-				DE34DF702881D00F0036732D /* Assets.xcassets */,
-				DE34DF722881D00F0036732D /* LaunchScreen.storyboard */,
-				DE34DF752881D00F0036732D /* Info.plist */,
+				DE89880828A2912F00818CF7 /* Data */,
 				DE34DF7D2881DD400036732D /* Extension */,
+				DE89880528A26AA000818CF7 /* StoryBoard */,
+				DE89880428A26A7A00818CF7 /* App */,
+				DE34DF88288C8D220036732D /* Start */,
+				DE34DF702881D00F0036732D /* Assets.xcassets */,
+				DE34DF752881D00F0036732D /* Info.plist */,
 			);
 			path = EPCO;
 			sourceTree = "<group>";
@@ -93,6 +94,32 @@
 				DE34DF86288C39220036732D /* StartSignUPViewController.swift */,
 			);
 			path = Start;
+			sourceTree = "<group>";
+		};
+		DE89880428A26A7A00818CF7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DE34DF672881D00D0036732D /* AppDelegate.swift */,
+				DE34DF692881D00D0036732D /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DE89880528A26AA000818CF7 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				DE34DF6D2881D00D0036732D /* Main.storyboard */,
+				DE34DF722881D00F0036732D /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		DE89880828A2912F00818CF7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DE89880628A26ADB00818CF7 /* UserInfo.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +197,7 @@
 				DE34DF7F288324980036732D /* StartLoginViewController.swift in Sources */,
 				DE34DF682881D00D0036732D /* AppDelegate.swift in Sources */,
 				DE34DF85288325770036732D /* UITextField+Extension.swift in Sources */,
+				DE89880728A26ADB00818CF7 /* UserInfo.swift in Sources */,
 				DE34DF87288C39230036732D /* StartSignUPViewController.swift in Sources */,
 				DE34DF7C2881DC790036732D /* UIView+Extension.swift in Sources */,
 				DE34DF6A2881D00D0036732D /* SceneDelegate.swift in Sources */,
