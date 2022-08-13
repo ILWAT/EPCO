@@ -365,11 +365,63 @@
             </objects>
             <point key="canvasLocation" x="1574" y="76"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Of2-3C-jdi">
+            <objects>
+                <viewController id="A0e-2c-Ch7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gTi-g5-Zyw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jJi-z3-NUw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="star.fill" catalog="system" id="XYi-G7-eAk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PM7-7f-9SV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="1649"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="mVZ-aw-Hf3">
+            <objects>
+                <viewController id="Jlq-xT-Hcw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="snu-e4-OSO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CEo-3l-6ih"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="홈" selectedImage="house" catalog="system" id="bak-hA-pMB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jwp-n6-00w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="962"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="l2Z-n3-tye">
+            <objects>
+                <tabBarController id="oZo-gw-JUA" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z2G-zr-tLB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Jlq-xT-Hcw" kind="relationship" relationship="viewControllers" id="5f8-HY-8fm"/>
+                        <segue destination="A0e-2c-Ch7" kind="relationship" relationship="viewControllers" id="5SC-a4-5ic"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlY-Sh-DeV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-932" y="1259"/>
+        </scene>
     </scenes>
     <resources>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="logo_plat=1" width="80" height="98"/>
         <image name="square" catalog="system" width="128" height="114"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
