@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oZo-gw-JUA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -365,7 +366,71 @@
             </objects>
             <point key="canvasLocation" x="1574" y="76"/>
         </scene>
-        <!--View Controller-->
+        <!--마이페이지-->
+        <scene sceneID="Ack-PM-bNw">
+            <objects>
+                <viewController id="82q-CN-ye2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7fU-d5-3Bl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dPl-tw-qmo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="person.fill" catalog="system" id="CAn-jJ-ycZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Djc-qF-8CF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="3048"/>
+        </scene>
+        <!--보관함-->
+        <scene sceneID="nm4-3c-wl8">
+            <objects>
+                <viewController id="490-yo-fPq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zoa-Fx-ppF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIt-3P-3ov">
+                                <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 보관함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRG-Ke-czc">
+                                        <rect key="frame" x="24" y="25.5" width="110.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J54-in-aII">
+                                        <rect key="frame" x="311" y="30" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.3529411764705882" green="0.3529411764705882" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dRG-Ke-czc" firstAttribute="centerY" secondItem="UIt-3P-3ov" secondAttribute="centerY" id="DGm-G0-SVq"/>
+                                    <constraint firstAttribute="height" constant="80" id="U7g-mb-xfh"/>
+                                    <constraint firstItem="dRG-Ke-czc" firstAttribute="leading" secondItem="UIt-3P-3ov" secondAttribute="leading" constant="24" id="wRu-FY-rgj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1kF-z7-lIf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UIt-3P-3ov" firstAttribute="top" secondItem="1kF-z7-lIf" secondAttribute="top" id="Cci-Qk-yZ4"/>
+                            <constraint firstItem="UIt-3P-3ov" firstAttribute="leading" secondItem="1kF-z7-lIf" secondAttribute="leading" id="WoN-z0-f22"/>
+                            <constraint firstItem="1kF-z7-lIf" firstAttribute="trailing" secondItem="UIt-3P-3ov" secondAttribute="trailing" id="aE6-vv-kRK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="보관함" image="archivebox.fill" catalog="system" id="ZTr-5F-5X7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CfZ-Rn-fc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="2339"/>
+        </scene>
+        <!--프로듀싱-->
         <scene sceneID="Of2-3C-jdi">
             <objects>
                 <viewController id="A0e-2c-Ch7" sceneMemberID="viewController">
@@ -375,7 +440,7 @@
                         <viewLayoutGuide key="safeArea" id="jJi-z3-NUw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" image="star.fill" catalog="system" id="XYi-G7-eAk"/>
+                    <tabBarItem key="tabBarItem" title="프로듀싱" image="star.fill" catalog="system" id="XYi-G7-eAk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PM7-7f-9SV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -384,14 +449,103 @@
         <!--홈-->
         <scene sceneID="mVZ-aw-Hf3">
             <objects>
-                <viewController id="Jlq-xT-Hcw" sceneMemberID="viewController">
+                <viewController id="Jlq-xT-Hcw" customClass="HomeMainViewController" customModule="EPCO" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="snu-e4-OSO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ema-ks-1Ii">
+                                <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EPCO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khl-sh-exa">
+                                        <rect key="frame" x="24" y="23" width="72" height="34"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Opr-Qo-2kL">
+                                        <rect key="frame" x="316" y="24" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="bNN-rb-32c"/>
+                                            <constraint firstAttribute="height" constant="32" id="iLF-S0-ACK"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.68235294117647061" green="0.68235294117647061" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="default"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iac-Jl-ifW">
+                                        <rect key="frame" x="358" y="24" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="Agb-EI-QDt"/>
+                                            <constraint firstAttribute="height" constant="32" id="xVr-x7-MK2"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.68235294117647061" green="0.68235294117647061" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="bell" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="22"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iac-Jl-ifW" secondAttribute="trailing" constant="24" id="1sz-xR-6mj"/>
+                                    <constraint firstItem="khl-sh-exa" firstAttribute="top" secondItem="ema-ks-1Ii" secondAttribute="top" constant="23" id="4st-Dt-kUx"/>
+                                    <constraint firstAttribute="height" constant="80" id="6ac-k6-iAf"/>
+                                    <constraint firstItem="iac-Jl-ifW" firstAttribute="top" secondItem="ema-ks-1Ii" secondAttribute="top" constant="24" id="OSG-dT-SxI"/>
+                                    <constraint firstItem="Opr-Qo-2kL" firstAttribute="centerY" secondItem="khl-sh-exa" secondAttribute="centerY" id="ZSQ-Pz-bQr"/>
+                                    <constraint firstAttribute="bottom" secondItem="khl-sh-exa" secondAttribute="bottom" constant="23" id="bS9-GY-ASO"/>
+                                    <constraint firstItem="khl-sh-exa" firstAttribute="leading" secondItem="ema-ks-1Ii" secondAttribute="leading" constant="24" id="sFy-ht-sIv"/>
+                                    <constraint firstAttribute="bottom" secondItem="iac-Jl-ifW" secondAttribute="bottom" constant="24" id="v0I-0N-6W1"/>
+                                    <constraint firstItem="iac-Jl-ifW" firstAttribute="leading" secondItem="Opr-Qo-2kL" secondAttribute="trailing" constant="10" id="wLd-MZ-GIe"/>
+                                    <constraint firstItem="iac-Jl-ifW" firstAttribute="centerY" secondItem="khl-sh-exa" secondAttribute="centerY" id="zg7-0b-Fqc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임님에게" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulg-DP-qZb">
+                                <rect key="frame" x="24" y="128" width="83.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <color key="textColor" red="0.3529411764705882" green="0.3529411764705882" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천하는 취향별 노래" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z88-Qp-k0D">
+                                <rect key="frame" x="24" y="147.5" width="166.5" height="24"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifv-lA-Z8C">
+                                <rect key="frame" x="315" y="154" width="75" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Alw-9N-bAv"/>
+                                    <constraint firstAttribute="height" constant="17" id="oYW-wm-1Rw"/>
+                                </constraints>
+                                <color key="tintColor" red="0.3529411764705882" green="0.3529411764705882" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="전체보기">
+                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CEo-3l-6ih"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CEo-3l-6ih" firstAttribute="trailing" secondItem="ema-ks-1Ii" secondAttribute="trailing" id="7IS-db-F7U"/>
+                            <constraint firstItem="ulg-DP-qZb" firstAttribute="leading" secondItem="CEo-3l-6ih" secondAttribute="leading" constant="24" id="8fr-wd-Dgc"/>
+                            <constraint firstItem="Z88-Qp-k0D" firstAttribute="top" secondItem="ulg-DP-qZb" secondAttribute="bottom" id="DzN-Ro-8IU"/>
+                            <constraint firstItem="ema-ks-1Ii" firstAttribute="leading" secondItem="CEo-3l-6ih" secondAttribute="leading" id="IRL-CI-WGd"/>
+                            <constraint firstItem="ema-ks-1Ii" firstAttribute="top" secondItem="CEo-3l-6ih" secondAttribute="top" id="Vbh-4h-346"/>
+                            <constraint firstItem="ulg-DP-qZb" firstAttribute="top" secondItem="ema-ks-1Ii" secondAttribute="bottom" constant="4" id="VmN-wb-XYv"/>
+                            <constraint firstItem="Z88-Qp-k0D" firstAttribute="leading" secondItem="ulg-DP-qZb" secondAttribute="leading" id="bd0-zm-3a8"/>
+                            <constraint firstItem="CEo-3l-6ih" firstAttribute="trailing" secondItem="Ifv-lA-Z8C" secondAttribute="trailing" constant="24" id="cmq-MX-vmI"/>
+                            <constraint firstItem="Ifv-lA-Z8C" firstAttribute="top" secondItem="ema-ks-1Ii" secondAttribute="bottom" constant="30" id="nhD-IM-nKq"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="홈" selectedImage="house" catalog="system" id="bak-hA-pMB"/>
+                    <tabBarItem key="tabBarItem" title="홈" selectedImage="house.fill" catalog="system" id="bak-hA-pMB"/>
+                    <connections>
+                        <outlet property="labelTitleEPCO" destination="khl-sh-exa" id="EvK-U9-G9d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jwp-n6-00w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -409,17 +563,23 @@
                     <connections>
                         <segue destination="Jlq-xT-Hcw" kind="relationship" relationship="viewControllers" id="5f8-HY-8fm"/>
                         <segue destination="A0e-2c-Ch7" kind="relationship" relationship="viewControllers" id="5SC-a4-5ic"/>
+                        <segue destination="490-yo-fPq" kind="relationship" relationship="viewControllers" id="A2v-4j-dzz"/>
+                        <segue destination="82q-CN-ye2" kind="relationship" relationship="viewControllers" id="YVL-Oy-GPn"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nlY-Sh-DeV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-932" y="1259"/>
+            <point key="canvasLocation" x="-910" y="1998"/>
         </scene>
     </scenes>
     <resources>
+        <image name="archivebox.fill" catalog="system" width="128" height="106"/>
+        <image name="bell" catalog="system" width="128" height="124"/>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
-        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="logo_plat=1" width="80" height="98"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="square" catalog="system" width="128" height="114"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
