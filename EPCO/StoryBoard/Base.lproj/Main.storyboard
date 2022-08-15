@@ -393,16 +393,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIt-3P-3ov">
                                 <rect key="frame" x="0.0" y="44" width="414" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 보관함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRG-Ke-czc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 보관함" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRG-Ke-czc">
                                         <rect key="frame" x="24" y="25.5" width="110.5" height="29"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J54-in-aII">
-                                        <rect key="frame" x="311" y="30" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="총 0개" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J54-in-aII">
+                                        <rect key="frame" x="348" y="30.5" width="42" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -412,16 +411,33 @@
                                 <constraints>
                                     <constraint firstItem="dRG-Ke-czc" firstAttribute="centerY" secondItem="UIt-3P-3ov" secondAttribute="centerY" id="DGm-G0-SVq"/>
                                     <constraint firstAttribute="height" constant="80" id="U7g-mb-xfh"/>
+                                    <constraint firstItem="J54-in-aII" firstAttribute="centerY" secondItem="UIt-3P-3ov" secondAttribute="centerY" id="fHJ-nd-6E9"/>
+                                    <constraint firstAttribute="trailing" secondItem="J54-in-aII" secondAttribute="trailing" constant="24" id="qXi-tc-frV"/>
                                     <constraint firstItem="dRG-Ke-czc" firstAttribute="leading" secondItem="UIt-3P-3ov" secondAttribute="leading" constant="24" id="wRu-FY-rgj"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="APg-Kd-e70">
+                                <rect key="frame" x="0.0" y="124" width="414" height="689"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eGR-4T-7Qx">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1kF-z7-lIf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UIt-3P-3ov" firstAttribute="top" secondItem="1kF-z7-lIf" secondAttribute="top" id="Cci-Qk-yZ4"/>
+                            <constraint firstItem="1kF-z7-lIf" firstAttribute="bottom" secondItem="APg-Kd-e70" secondAttribute="bottom" id="UHG-CS-Jpk"/>
                             <constraint firstItem="UIt-3P-3ov" firstAttribute="leading" secondItem="1kF-z7-lIf" secondAttribute="leading" id="WoN-z0-f22"/>
                             <constraint firstItem="1kF-z7-lIf" firstAttribute="trailing" secondItem="UIt-3P-3ov" secondAttribute="trailing" id="aE6-vv-kRK"/>
+                            <constraint firstItem="APg-Kd-e70" firstAttribute="leading" secondItem="1kF-z7-lIf" secondAttribute="leading" id="eVU-Ra-BvJ"/>
+                            <constraint firstItem="1kF-z7-lIf" firstAttribute="trailing" secondItem="APg-Kd-e70" secondAttribute="trailing" id="fzr-9V-tmX"/>
+                            <constraint firstItem="APg-Kd-e70" firstAttribute="top" secondItem="UIt-3P-3ov" secondAttribute="bottom" id="uQZ-6q-jcJ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="보관함" image="archivebox.fill" catalog="system" id="ZTr-5F-5X7"/>
@@ -503,13 +519,13 @@
                                     <constraint firstItem="iac-Jl-ifW" firstAttribute="centerY" secondItem="khl-sh-exa" secondAttribute="centerY" id="zg7-0b-Fqc"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임님에게" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulg-DP-qZb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임님에게" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulg-DP-qZb">
                                 <rect key="frame" x="24" y="128" width="83.5" height="19.5"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
                                 <color key="textColor" red="0.3529411764705882" green="0.3529411764705882" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천하는 취향별 노래" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z88-Qp-k0D">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천하는 취향별 노래" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z88-Qp-k0D">
                                 <rect key="frame" x="24" y="147.5" width="166.5" height="24"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -543,6 +559,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" selectedImage="house.fill" catalog="system" id="bak-hA-pMB"/>
+                    <navigationItem key="navigationItem" id="JCw-ii-VX0"/>
                     <connections>
                         <outlet property="labelTitleEPCO" destination="khl-sh-exa" id="EvK-U9-G9d"/>
                     </connections>
@@ -550,6 +567,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jwp-n6-00w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="19" y="962"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ANp-xn-Rim">
+            <objects>
+                <viewController id="O2Q-Fu-CQn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J88-2b-c6E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAV-ic-T5V">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="추천하는 취향별 노래" id="GwT-lB-ScD">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="KJC-fx-A65">
+                                            <color key="tintColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ebQ-ig-HiL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pAV-ic-T5V" firstAttribute="top" secondItem="ebQ-ig-HiL" secondAttribute="top" id="7ON-2G-3fw"/>
+                            <constraint firstItem="ebQ-ig-HiL" firstAttribute="trailing" secondItem="pAV-ic-T5V" secondAttribute="trailing" id="Ujm-zm-JTa"/>
+                            <constraint firstItem="pAV-ic-T5V" firstAttribute="leading" secondItem="J88-2b-c6E" secondAttribute="leading" id="nS0-81-pRU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ac-Y8-Wnv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749" y="962"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="l2Z-n3-tye">
@@ -576,6 +625,7 @@
         <image name="archivebox.fill" catalog="system" width="128" height="106"/>
         <image name="bell" catalog="system" width="128" height="124"/>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="logo_plat=1" width="80" height="98"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
