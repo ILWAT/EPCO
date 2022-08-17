@@ -22,6 +22,7 @@ extension UILabel{
         gradient.frame = bounds
         gradient.transform = CATransform3DMakeAffineTransform(CGAffineTransform(a: 0.55, b: 1, c: -1, d: 1.04, tx: 0.74, ty: -0.52))
         gradient.bounds = label.bounds.insetBy(dx: -0.5*label.bounds.size.width, dy: -0.5*label.bounds.size.height)
-        layer.mask = gradient
+        label.layer.mask=gradient
+        
     }
 }
