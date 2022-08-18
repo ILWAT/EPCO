@@ -20,6 +20,8 @@
 		DE89880728A26ADB00818CF7 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89880628A26ADB00818CF7 /* UserInfo.swift */; };
 		DE89880A28A908F100818CF7 /* HomeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89880928A908F100818CF7 /* HomeMainViewController.swift */; };
 		DE89880D28A92F3E00818CF7 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89880C28A92F3E00818CF7 /* UILabel+Extension.swift */; };
+		DEDB160028AE117200FA4A4D /* StorageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB15FE28AE117200FA4A4D /* StorageTableViewCell.swift */; };
+		DEDB160128AE117200FA4A4D /* StorageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDB15FF28AE117200FA4A4D /* StorageTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		DE89880628A26ADB00818CF7 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		DE89880928A908F100818CF7 /* HomeMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainViewController.swift; sourceTree = "<group>"; };
 		DE89880C28A92F3E00818CF7 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		DEDB15FE28AE117200FA4A4D /* StorageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTableViewCell.swift; sourceTree = "<group>"; };
+		DEDB15FF28AE117200FA4A4D /* StorageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StorageTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +74,9 @@
 		DE34DF662881D00D0036732D /* EPCO */ = {
 			isa = PBXGroup;
 			children = (
-				DE34DF88288C8D220036732D /* Start */,
 				DE89880B28A908F500818CF7 /* Home */,
+				DE34DF88288C8D220036732D /* Start */,
+				DEDB15FD28AE0F4200FA4A4D /* Storage */,
 				DE89880828A2912F00818CF7 /* Data */,
 				DE34DF7D2881DD400036732D /* Extension */,
 				DE89880528A26AA000818CF7 /* StoryBoard */,
@@ -136,6 +141,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		DEDB15FD28AE0F4200FA4A4D /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				DEDB15FE28AE117200FA4A4D /* StorageTableViewCell.swift */,
+				DEDB15FF28AE117200FA4A4D /* StorageTableViewCell.xib */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE34DF742881D00F0036732D /* LaunchScreen.storyboard in Resources */,
+				DEDB160128AE117200FA4A4D /* StorageTableViewCell.xib in Resources */,
 				DE34DF712881D00F0036732D /* Assets.xcassets in Resources */,
 				DE34DF6F2881D00D0036732D /* Main.storyboard in Resources */,
 			);
@@ -215,6 +230,7 @@
 				DE89880728A26ADB00818CF7 /* UserInfo.swift in Sources */,
 				DE34DF87288C39230036732D /* StartSignUPViewController.swift in Sources */,
 				DE34DF7C2881DC790036732D /* UIView+Extension.swift in Sources */,
+				DEDB160028AE117200FA4A4D /* StorageTableViewCell.swift in Sources */,
 				DE89880A28A908F100818CF7 /* HomeMainViewController.swift in Sources */,
 				DE34DF6A2881D00D0036732D /* SceneDelegate.swift in Sources */,
 			);

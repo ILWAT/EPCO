@@ -416,28 +416,21 @@
                                     <constraint firstItem="dRG-Ke-czc" firstAttribute="leading" secondItem="UIt-3P-3ov" secondAttribute="leading" constant="24" id="wRu-FY-rgj"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="APg-Kd-e70">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5p7-qW-QoZ">
                                 <rect key="frame" x="0.0" y="124" width="414" height="689"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eGR-4T-7Qx">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1kF-z7-lIf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="5p7-qW-QoZ" firstAttribute="top" secondItem="UIt-3P-3ov" secondAttribute="bottom" id="AE1-ox-8wD"/>
                             <constraint firstItem="UIt-3P-3ov" firstAttribute="top" secondItem="1kF-z7-lIf" secondAttribute="top" id="Cci-Qk-yZ4"/>
-                            <constraint firstItem="1kF-z7-lIf" firstAttribute="bottom" secondItem="APg-Kd-e70" secondAttribute="bottom" id="UHG-CS-Jpk"/>
+                            <constraint firstItem="5p7-qW-QoZ" firstAttribute="leading" secondItem="1kF-z7-lIf" secondAttribute="leading" id="SNE-Rx-PNH"/>
+                            <constraint firstItem="1kF-z7-lIf" firstAttribute="bottom" secondItem="5p7-qW-QoZ" secondAttribute="bottom" id="SZt-9m-nQ1"/>
                             <constraint firstItem="UIt-3P-3ov" firstAttribute="leading" secondItem="1kF-z7-lIf" secondAttribute="leading" id="WoN-z0-f22"/>
                             <constraint firstItem="1kF-z7-lIf" firstAttribute="trailing" secondItem="UIt-3P-3ov" secondAttribute="trailing" id="aE6-vv-kRK"/>
-                            <constraint firstItem="APg-Kd-e70" firstAttribute="leading" secondItem="1kF-z7-lIf" secondAttribute="leading" id="eVU-Ra-BvJ"/>
-                            <constraint firstItem="1kF-z7-lIf" firstAttribute="trailing" secondItem="APg-Kd-e70" secondAttribute="trailing" id="fzr-9V-tmX"/>
-                            <constraint firstItem="APg-Kd-e70" firstAttribute="top" secondItem="UIt-3P-3ov" secondAttribute="bottom" id="uQZ-6q-jcJ"/>
+                            <constraint firstItem="1kF-z7-lIf" firstAttribute="trailing" secondItem="5p7-qW-QoZ" secondAttribute="trailing" id="tUY-fe-hJS"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="보관함" image="archivebox.fill" catalog="system" id="ZTr-5F-5X7"/>
@@ -543,19 +536,34 @@
                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                 </buttonConfiguration>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GXN-33-zb1">
+                                <rect key="frame" x="0.0" y="171.5" width="414" height="641.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rsA-MX-2gh">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CEo-3l-6ih"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="GXN-33-zb1" firstAttribute="leading" secondItem="CEo-3l-6ih" secondAttribute="leading" id="4hL-Sl-DBk"/>
                             <constraint firstItem="CEo-3l-6ih" firstAttribute="trailing" secondItem="ema-ks-1Ii" secondAttribute="trailing" id="7IS-db-F7U"/>
                             <constraint firstItem="ulg-DP-qZb" firstAttribute="leading" secondItem="CEo-3l-6ih" secondAttribute="leading" constant="24" id="8fr-wd-Dgc"/>
                             <constraint firstItem="Z88-Qp-k0D" firstAttribute="top" secondItem="ulg-DP-qZb" secondAttribute="bottom" id="DzN-Ro-8IU"/>
+                            <constraint firstItem="GXN-33-zb1" firstAttribute="top" secondItem="Z88-Qp-k0D" secondAttribute="bottom" id="GYX-If-SHZ"/>
                             <constraint firstItem="ema-ks-1Ii" firstAttribute="leading" secondItem="CEo-3l-6ih" secondAttribute="leading" id="IRL-CI-WGd"/>
                             <constraint firstItem="ema-ks-1Ii" firstAttribute="top" secondItem="CEo-3l-6ih" secondAttribute="top" id="Vbh-4h-346"/>
                             <constraint firstItem="ulg-DP-qZb" firstAttribute="top" secondItem="ema-ks-1Ii" secondAttribute="bottom" constant="4" id="VmN-wb-XYv"/>
                             <constraint firstItem="Z88-Qp-k0D" firstAttribute="leading" secondItem="ulg-DP-qZb" secondAttribute="leading" id="bd0-zm-3a8"/>
                             <constraint firstItem="CEo-3l-6ih" firstAttribute="trailing" secondItem="Ifv-lA-Z8C" secondAttribute="trailing" constant="24" id="cmq-MX-vmI"/>
                             <constraint firstItem="Ifv-lA-Z8C" firstAttribute="top" secondItem="ema-ks-1Ii" secondAttribute="bottom" constant="30" id="nhD-IM-nKq"/>
+                            <constraint firstItem="CEo-3l-6ih" firstAttribute="bottom" secondItem="GXN-33-zb1" secondAttribute="bottom" id="qf2-Bh-8aH"/>
+                            <constraint firstItem="CEo-3l-6ih" firstAttribute="trailing" secondItem="GXN-33-zb1" secondAttribute="trailing" id="rXm-pZ-KMs"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" selectedImage="house.fill" catalog="system" id="bak-hA-pMB"/>
@@ -586,19 +594,34 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Y0B-cj-G54">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aM1-4y-kW9">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ebQ-ig-HiL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ebQ-ig-HiL" firstAttribute="bottom" secondItem="Y0B-cj-G54" secondAttribute="bottom" id="0RS-pb-7Rp"/>
+                            <constraint firstItem="Y0B-cj-G54" firstAttribute="leading" secondItem="ebQ-ig-HiL" secondAttribute="leading" id="71t-L8-mt4"/>
                             <constraint firstItem="pAV-ic-T5V" firstAttribute="top" secondItem="ebQ-ig-HiL" secondAttribute="top" id="7ON-2G-3fw"/>
                             <constraint firstItem="ebQ-ig-HiL" firstAttribute="trailing" secondItem="pAV-ic-T5V" secondAttribute="trailing" id="Ujm-zm-JTa"/>
+                            <constraint firstItem="ebQ-ig-HiL" firstAttribute="trailing" secondItem="Y0B-cj-G54" secondAttribute="trailing" id="ipR-uc-07d"/>
                             <constraint firstItem="pAV-ic-T5V" firstAttribute="leading" secondItem="J88-2b-c6E" secondAttribute="leading" id="nS0-81-pRU"/>
+                            <constraint firstItem="Y0B-cj-G54" firstAttribute="top" secondItem="pAV-ic-T5V" secondAttribute="bottom" id="yan-jq-ql0"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ac-Y8-Wnv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="962"/>
+            <point key="canvasLocation" x="730" y="962"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="l2Z-n3-tye">
@@ -619,6 +642,100 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nlY-Sh-DeV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-910" y="1998"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XgV-iH-oaZ">
+            <objects>
+                <viewController id="e4a-bO-aHf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pJK-tC-RGw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVK-qw-ua7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="이번주 인기순위 10" id="EQo-fT-BrU">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="c9m-dS-5j9">
+                                            <color key="tintColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="g6k-4q-VKP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WWi-ID-GBV">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ITT-th-4Y1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ITT-th-4Y1" firstAttribute="trailing" secondItem="VVK-qw-ua7" secondAttribute="trailing" id="2Dl-EI-RA1"/>
+                            <constraint firstItem="VVK-qw-ua7" firstAttribute="leading" secondItem="pJK-tC-RGw" secondAttribute="leading" id="36T-6e-0MD"/>
+                            <constraint firstItem="VVK-qw-ua7" firstAttribute="top" secondItem="ITT-th-4Y1" secondAttribute="top" id="O0u-Gr-VLn"/>
+                            <constraint firstItem="ITT-th-4Y1" firstAttribute="bottom" secondItem="g6k-4q-VKP" secondAttribute="bottom" id="TRZ-sS-u4Q"/>
+                            <constraint firstItem="ITT-th-4Y1" firstAttribute="trailing" secondItem="g6k-4q-VKP" secondAttribute="trailing" id="eeg-NC-xfJ"/>
+                            <constraint firstItem="g6k-4q-VKP" firstAttribute="leading" secondItem="ITT-th-4Y1" secondAttribute="leading" id="epA-KH-Geh"/>
+                            <constraint firstItem="g6k-4q-VKP" firstAttribute="top" secondItem="VVK-qw-ua7" secondAttribute="bottom" id="tLY-g5-J1Z"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DmR-hY-vGa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="962"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ezu-AQ-ALQ">
+            <objects>
+                <viewController id="htV-Yb-4gn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P4V-E3-b11">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Vj-h5-QNT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="따끈따끈 신곡" id="6Pc-cJ-HSb">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="xye-vE-qxz">
+                                            <color key="tintColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="msV-Fy-v9T">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="me5-Vx-G7H">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rYA-DK-JMF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rYA-DK-JMF" firstAttribute="bottom" secondItem="msV-Fy-v9T" secondAttribute="bottom" id="1jF-Zh-gei"/>
+                            <constraint firstItem="1Vj-h5-QNT" firstAttribute="top" secondItem="rYA-DK-JMF" secondAttribute="top" id="5Mm-Ls-NTw"/>
+                            <constraint firstItem="1Vj-h5-QNT" firstAttribute="leading" secondItem="P4V-E3-b11" secondAttribute="leading" id="A4x-13-nmc"/>
+                            <constraint firstItem="rYA-DK-JMF" firstAttribute="trailing" secondItem="msV-Fy-v9T" secondAttribute="trailing" id="FD3-m0-Vln"/>
+                            <constraint firstItem="rYA-DK-JMF" firstAttribute="trailing" secondItem="1Vj-h5-QNT" secondAttribute="trailing" id="MJi-oY-2fA"/>
+                            <constraint firstItem="msV-Fy-v9T" firstAttribute="leading" secondItem="rYA-DK-JMF" secondAttribute="leading" id="U1u-hI-1ir"/>
+                            <constraint firstItem="msV-Fy-v9T" firstAttribute="top" secondItem="1Vj-h5-QNT" secondAttribute="bottom" id="cbc-Xg-cPk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Gw-lD-8tO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2130" y="962"/>
         </scene>
     </scenes>
     <resources>
